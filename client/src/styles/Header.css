@@ -1,0 +1,78 @@
+header {
+    position: relative;
+    z-index: 6;
+    background-color: white;
+    position: relative;
+}
+
+.navBar {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  position: relative;
+  background-color: white;
+}
+
+
+.navbarLink  {
+
+    margin-left: 200px; 
+    list-style:none ;
+    cursor:default;
+  
+  
+    
+}
+
+.homeButton {
+
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+.categories {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  list-style: none;
+  transition: 0.5s ease-in-out ;
+  z-index: -5;
+  left: 0;
+  border-bottom: solid black 1px;
+
+  
+  
+ 
+  
+}
+
+.category {
+  margin: 20px;
+}
+
+.brands {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  list-style: none;
+  transition: 0.5s ease-in-out;
+  z-index: -5;
+  left: 0;
+  border-bottom: solid black 1px;
+  
+
+}
+
+.brand {
+  margin: 20px;
+  
+}
+
+
+
