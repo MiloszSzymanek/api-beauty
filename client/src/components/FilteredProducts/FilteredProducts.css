@@ -1,0 +1,49 @@
+img {
+    width: auto;
+    height:300px;
+  }
+  .oneBrand,
+  .oneCategory {
+      
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-gap: 20px;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+   
+    
+  }
+
+  h2, p, a {
+
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  .product  {
+      border: solid 0.5px lightgray;
+     
+      height: 450px;
+      background-color: white;
+      padding: 20px;
+  
+  }
+  
+  .product img {
+      width: 100%;
+      
+  }
+
+  .product:hover {
+
+    border: solid 1px darkgray;
+    cursor: pointer;
+    
+   
+  }
+  
+  
+  
+  

@@ -2,12 +2,12 @@ import { React, useContext, useEffect } from "react";
 import { ShopContext } from "./Context";
 import axios from "axios";
 import "../styles/App.css";
-import Header from "./Header";
+import Header from "../components/Header/Header";
 import { Route, Switch } from "react-router-dom";
-import OneCategory from "./OneCategory";
-import OneBrand from "./OneBrand";
-import Home from "./Home";
-import ProductCard from "./ProductCard";
+import OneCategory from "./FilteredProducts/OneCategory";
+import OneBrand from "./FilteredProducts/OneBrand";
+import Home from "./Home/Home";
+import ProductCard from "./Productcard/ProductCard";
 
 function App() {
   const { loadProducts } = useContext(ShopContext);
@@ -32,11 +32,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-     <Switch>
+      <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/OneCategory" exact component={OneCategory} />
-        <Route exact path="/OneBrand" exact component={OneBrand} />
-        <Route exact path="/ProductCard" exact component={ProductCard} />
+        <Route path="/OneBrand" exact component={OneBrand} />
+        <Route path="/ProductCard" exact component={ProductCard} />
       </Switch>
     </div>
   );
