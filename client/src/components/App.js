@@ -8,6 +8,7 @@ import OneCategory from "./FilteredProducts/OneCategory";
 import OneBrand from "./FilteredProducts/OneBrand";
 import Home from "./Home/Home";
 import ProductCard from "./Productcard/ProductCard";
+import Register from "./Register/Register";
 
 function App() {
   const { loadProducts } = useContext(ShopContext);
@@ -36,7 +37,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/OneCategory" exact component={OneCategory} />
         <Route path="/OneBrand" exact component={OneBrand} />
-        <Route path="/ProductCard" exact component={ProductCard} />
+        <Route path="/ProductCard" exact component={ProductCard} /> 
+        <Route path="/Register" exact component={Register} />
       </Switch>
     </div>
   );

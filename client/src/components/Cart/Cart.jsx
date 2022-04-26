@@ -34,16 +34,13 @@ export default function Cart(props) {
     item.quantity = e.target.value;
 
     updateLocalStorage();
-
-    
   }
 
-  function getTotal(){
-
+  function getTotal() {
     let total = 0;
 
-    for( let i = 0; i < cart.length; i++) {
-      total += Number(cart[i].price) * Number(cart[i].quantity)
+    for (let i = 0; i < cart.length; i++) {
+      total += Number(cart[i].price) * Number(cart[i].quantity);
     }
 
     return total.toFixed(2);
@@ -80,7 +77,6 @@ export default function Cart(props) {
                     id="quantity"
                     onChange={(e) => editQuantity(i, e)}
                   >
-
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -94,7 +90,9 @@ export default function Cart(props) {
                   </select>
                 </div>
               </div>
-              <p className="itemPrice">{Number(i.price).toFixed(2).toString()} $</p>
+              <p className="itemPrice">
+                {Number(i.price).toFixed(2).toString()} $
+              </p>
               <div className="deleteItem">
                 <RiDeleteBin6Line onClick={() => deleteCartItem(i)} />
               </div>
@@ -102,8 +100,18 @@ export default function Cart(props) {
           ))}
         </div>
       )}
-      <div className="totalPrice"><h3>Total Price</h3>{getTotal()} $</div>
-      <button type="submit">BUY</button>
+
+      {cart.length === 0 ? (
+        <div></div>
+      ) : (
+        <div className="totalPrice">
+          <h3>Total Price</h3>
+          <p>{getTotal()} ${" "}</p>
+          <button className="buyButton" type="submit">
+            BUY
+          </button>{" "}
+        </div>
+      )}
     </div>
   );
 }

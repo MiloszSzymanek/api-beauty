@@ -5,6 +5,7 @@ import Categories from "./Categories";
 import Brands from "./Brands";
 import "../Header/Header.css";
 import Cart from "../Cart/Cart";
+import UserModal from "../UserModal/UserModal";
 
 export default function Header() {
   const { products, cart } = useContext(ShopContext);
@@ -12,6 +13,10 @@ export default function Header() {
   const [categoriesDrop, setCategoriesDrop] = useState(false);
   const [brandDrop, setBrandDrop] = useState(false);
   const [showCart, setShowCart] = useState(false);
+
+  const [userModal, setUserModal] = useState(false);
+  
+  
   const category = [];
 
   for (let i = 0; i < products.length; i++) {
@@ -52,14 +57,31 @@ export default function Header() {
             <Brands bDrop={brandDrop} setBDrop={setBrandDrop} />
           </NavLink>
         </li>
+
+        <li>
+          <div className="userIcon">
+            <div className="openUser" onClick={() => setUserModal(true)}>  
+            </div>
+            <UserModal  modalState={userModal} closeModal={setUserModal}/>
+          </div>
+        </li>
+
         <li>
           <div className="cartIcon">
-            <div className="openCart" onClick={() => setShowCart(true)}> {cart.length > 0 && <div className="numberOfItemsInCart">{cart.length.toString()}</div>}</div>
-             
+            <div className="openCart" onClick={() => setShowCart(true)}>
+              {" "}
+              {cart.length > 0 && (
+                <div className="numberOfItemsInCart">
+                  {cart.length.toString()}
+                </div>
+              )}
+            </div>
+
             <Cart cartState={showCart} closeCart={setShowCart} />
             <div className="itemsInCart"></div>
           </div>
         </li>
+        
       </ul>
     </header>
   );

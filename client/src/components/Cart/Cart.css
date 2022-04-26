@@ -13,11 +13,14 @@
   z-index: -6;
   overflow: scroll;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .infoEmpty{
 
-  margin: 30px;
+  margin: auto;
 }
 
 .showCartContainer {
@@ -34,7 +37,9 @@
   top: 0;
   z-index: -6;
   overflow: scroll;
+  display: flex;
   flex-direction: column;
+
 }
 
 .itemInCart {
@@ -42,6 +47,20 @@
   border-collapse: collapse;
   margin: 5% ;
   padding: 1% 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  
+
+}
+
+.itemPrice {
+  grid-column: 2/3;
+}
+
+.deleteItem {
+
+  grid-column:  1/2;
+  grid-row: 2/3;
 }
 
 .closeCartDiv {
@@ -59,4 +78,29 @@
 .cartImage{
   width: 100px;
   height: auto;
+}
+
+
+.buyButton{
+
+  background-color: rgb(136, 105, 43);
+    font-size: 2em;
+    text-transform: lowercase;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 3px;
+    width: 250px;
+    height: 70px;
+    color: white;
+    box-shadow: none;
+    margin: 30px auto;
+}
+
+.totalPrice {
+  display: flex;
+  flex-direction: column;
+}
+
+.totalPrice h3, p {
+  align-self: flex-end;
 }

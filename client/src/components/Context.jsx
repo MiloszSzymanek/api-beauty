@@ -10,6 +10,7 @@ export default function ShopContextProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [quantity, setQuantity] = useState("1");
   const [cartInfo, setCartInfo] = useState(false);
+  
 
   
   
