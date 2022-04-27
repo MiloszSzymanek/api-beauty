@@ -93,7 +93,7 @@ export default function Register() {
         onChange={(e) => setData({ ...data, password: e.target.value })}/>
         <label >Password</label>
       </div>
-
+      
       <button type="submit" onClick={handleClick}>Register</button>
     </form>
   );

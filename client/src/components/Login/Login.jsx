@@ -53,7 +53,7 @@ export default function Login(props) {
         <label >Password</label>
       </div>
 
-      <button className="loginButton" type="submit" onClick={handleClick}>Login</button>
+      <button className="loginButton" type="submit" onClick={handleClick}>Log in</button>
       </form>
       </div>
     )

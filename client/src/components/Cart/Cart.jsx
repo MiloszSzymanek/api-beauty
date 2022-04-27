@@ -4,6 +4,7 @@ import { ShopContext } from "../Context";
 
 import { GrClose } from "react-icons/gr";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import Cookies from 'js-cookie';
 
 export default function Cart(props) {
   const { cart, setCart, setQuantity } = useContext(ShopContext);
@@ -45,6 +46,9 @@ export default function Cart(props) {
 
     return total.toFixed(2);
   }
+
+  
+
 
   return (
     <div
@@ -107,7 +111,7 @@ export default function Cart(props) {
         <div className="totalPrice">
           <h3>Total Price</h3>
           <p>{getTotal()} ${" "}</p>
-          <button className="buyButton" type="submit">
+          <button className="buyButton" type="submit" >
             BUY
           </button>{" "}
         </div>

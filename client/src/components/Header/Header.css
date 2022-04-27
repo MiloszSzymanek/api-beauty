@@ -65,11 +65,9 @@ header {
   width: 100%;
   opacity: 1;
   transform: translateY(0);
-
   background-color: white;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-
   position: absolute;
   list-style: none;
   transition: 0.2s ease-in-out;
