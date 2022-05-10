@@ -4,4 +4,4 @@ A fictitious online store, created as part of the training, based on an External
 (work is still in progress)
 
 API I used:
-[Makeup API]{https://makeup-api.herokuapp.com/}
+[Makeup API](https://makeup-api.herokuapp.com/)
