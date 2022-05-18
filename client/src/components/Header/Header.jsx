@@ -38,7 +38,7 @@ export default function Header() {
         </li>
         <li>
           <NavLink
-            to="/"
+            to=""
             className="categoryLink"
             onMouseEnter={() => setCategoriesDrop(true)}
             onMouseLeave={() => setCategoriesDrop(false)}
@@ -50,7 +50,7 @@ export default function Header() {
         <li>
           {" "}
           <NavLink
-            to="/"
+            to=""
             security=""
             className="brandLink"
             onMouseEnter={() => setBrandDrop(true)}

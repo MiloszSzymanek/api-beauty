@@ -46,7 +46,6 @@ nav {
   display: flex;
   align-items: center;
   height: 7vh;
-  cursor: pointer;
   padding: 3px;
 }
 
@@ -67,7 +66,7 @@ nav {
   display: flex;
   align-items: center;
   height: 7vh;
-  cursor: pointer;
+  
 }
 
 .brandLink:hover {
@@ -180,7 +179,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  margin-right: 100px;
+  
   
  
 }
