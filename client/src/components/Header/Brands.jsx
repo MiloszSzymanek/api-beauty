@@ -29,7 +29,7 @@ export default function Brands(props) {
         <li className="brand" onClick={() => productsByBrand(i) }> 
           <NavLink
             exact
-            className="brandLink"
+            className="openBrand"
             activeClassName="activeBrandLink"
             to="/OneBrand"
             onClick={() => props.setBDrop(false)}

@@ -34,7 +34,7 @@ export default function Categories(props) {
         <li className="category" onClick={() => productsByCategory(i) }> 
           <NavLink
             exact
-            className="categoryLink"
+            className="openCategory"
             activeClassName="activeCategoryLink"
             to="/OneCategory"
             onClick={() => props.setCat(false)}

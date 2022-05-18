@@ -44,8 +44,9 @@
 
 }
 .ToCart {
-  background-color: rgb(136, 105, 43);
+  background-color: #c09b1c;
   font-size: 2em;
+  border: none;
   text-transform: lowercase;
   font-weight: 600;
   font-family: "Jost", sans-serif;

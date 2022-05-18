@@ -9,6 +9,7 @@ import OneBrand from "./FilteredProducts/OneBrand";
 import Home from "./Home/Home";
 import ProductCard from "./Productcard/ProductCard";
 import Register from "./Register/Register";
+import Modal from "./Modal/Modal";
 
 function App() {
   const { loadProducts } = useContext(ShopContext);
@@ -32,6 +33,8 @@ function App() {
 
   return (
     <div className="App">
+      <Modal />
+
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />

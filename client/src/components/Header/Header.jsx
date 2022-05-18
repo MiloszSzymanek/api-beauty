@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { ShopContext } from "../Context";
 import Categories from "./Categories";
 import Brands from "./Brands";
+import Logo from "../Logo/Logo";
 import "../Header/Header.css";
 import Cart from "../Cart/Cart";
 import UserModal from "../UserModal/UserModal";
@@ -27,7 +28,9 @@ export default function Header() {
 
   return (
     <header>
+      <nav>
       <ul className="navBar">
+        <li className="logoItem"><Logo /></li>
         <li className="homeLink">
           <NavLink to="/" exact className="homeLink">
             Home
@@ -83,6 +86,7 @@ export default function Header() {
         </li>
         
       </ul>
+    </nav>
     </header>
   );
 }

@@ -1,0 +1,11 @@
+.logo {
+    background-image: url(../../images/api\ beauty\ logo.png);
+    width: 150px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    
+    
+}
