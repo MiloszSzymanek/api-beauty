@@ -7,13 +7,15 @@
 }
 
 .firstBanner {
+    margin-top: 5vh;
     width: 100%;
-    height: 40vh;
+    height: 600px;
     display: flex;
 }
 
 .firstBannerText {
     width: 30%;
+    border: solid 6px black;
     background-color: #fcedbc;
     padding: 20px;
     display: flex;
@@ -21,9 +23,12 @@
     justify-content: flex-end;
 }
 
-.firstBannerText > h2 {
+.firstBannerText > h1 {
 
     margin-bottom: 10%;
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .firstBannerText > p {

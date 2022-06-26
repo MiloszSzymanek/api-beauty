@@ -22,9 +22,9 @@ export default function OneCategory(props) {
             <div className="product" onClick={() => productsId(item.id)}>
               {" "}
               <img src={item.api_featured_image} alt="" />
-              <h2>{item.brand}</h2>
-              <p>{item.name}</p>
-              <p>{Number(item.price).toFixed(2).toString()} $</p>{" "}
+              <h4 className="productBrand">{item.brand}</h4>
+              <p className="productName">{item.name}</p>
+              <p className="productSmallPrice">{Number(item.price).toFixed(2).toString()} $</p>{" "}
             </div>
           </NavLink>
         ))}

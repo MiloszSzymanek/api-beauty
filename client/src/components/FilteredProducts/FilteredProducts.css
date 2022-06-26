@@ -23,10 +23,37 @@ a {
 
 .product {
   border: solid 0.5px lightgray;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   height: 400px;
   background-color: white;
   padding: 20px;
+}
+
+.productBrand {
+
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+ 
+.productName {
+  align-self:flex-start;
+  color: rgb(83, 83, 83);
+  height: 2em;
+  overflow: hidden;
+  line-height: 1em;
+}
+
+.productSmallPrice {
+
+ font-size: 1.5rem;
+ color: white;
+ background-color: rgb(185, 181, 181);
+ padding: 5px;
+ font-weight: 600;
+ border: solid 2px white;
 }
 
 .product img {
@@ -36,4 +63,12 @@ a {
 .product:hover {
   border: solid 1px darkgray;
   cursor: pointer;
+}
+
+.product:hover .productSmallPrice {
+
+  background-color: #fcedbc;
+  color: black;
+  border: solid 2px black;
+
 }

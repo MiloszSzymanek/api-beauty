@@ -89,6 +89,13 @@
   margin: 30px auto;
 }
 
+.buyButton:active {
+
+  background-color: #fcedbc;
+  color: black;
+  border: solid 2px black;
+}
+
 .totalPrice {
   display: flex;
   flex-direction: column;

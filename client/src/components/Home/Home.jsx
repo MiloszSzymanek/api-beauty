@@ -8,7 +8,7 @@ export default function Home(){
         <div className="homeContainer">
             <div className="firstBanner">
                 <div className="firstBannerText">
-                    <h2>Summer Sale</h2>
+                    <h1>Summer Sale</h1>
                     <p>Use our discount code "SUMMER 22" to buy your favorite products 25% cheaper!</p>
 
                     

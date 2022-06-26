@@ -56,9 +56,16 @@
   height: 70px;
   color: white;
   box-shadow: none;
+  cursor: pointer;
 
 }
 
+.ToCart:active {
+
+  background-color: #fcedbc;
+  color: black;
+  border: solid 2px black;
+}
 .productDescription {
   grid-row: 6/7;
   grid-column: 1/3;
