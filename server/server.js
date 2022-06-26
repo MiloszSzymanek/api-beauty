@@ -15,6 +15,6 @@ app.use('/users',require('./api/users') )
 const connectToDB = require('./config/db')
 connectToDB()
 
-const port = process.env.PORT || 5000
+const port = process.env.host || 5000
 
 app.listen(port, () => console.log('sever is up and running', port))
