@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57e0c214.css",
+    "main.js": "/static/js/main.1aca42d3.js",
+    "static/js/787.41088406.chunk.js": "/static/js/787.41088406.chunk.js",
+    "static/media/cosmetics-1063134.jpg": "/static/media/cosmetics-1063134.f943265e4ba1d4f2072b.jpg",
+    "static/media/-abstract-user-icon-1.png": "/static/media/-abstract-user-icon-1.9e4745a27351f6317a61.png",
+    "static/media/PinClipart.com_clipart-spa_4035278.png": "/static/media/PinClipart.com_clipart-spa_4035278.10d2918fb2f0110d992b.png",
+    "static/media/api beauty logo.png": "/static/media/api beauty logo.bb4093460dd2ad7856b5.png",
+    "index.html": "/index.html",
+    "main.57e0c214.css.map": "/static/css/main.57e0c214.css.map",
+    "main.1aca42d3.js.map": "/static/js/main.1aca42d3.js.map",
+    "787.41088406.chunk.js.map": "/static/js/787.41088406.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57e0c214.css",
+    "static/js/main.1aca42d3.js"
+  ]
+}
